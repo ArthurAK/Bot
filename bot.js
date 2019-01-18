@@ -397,3 +397,12 @@ function toimitusPapukaija(channelName, msg) {
         ch.send(msg);
     }
 }
+
+function Pingi(msg) {
+    message.delete(15000);
+    if (message.author.bot !== true) {
+                message.send('Pong! `' + `${Date.now() - message.createdTimestamp}` + ' ms`').then(message => {
+                    message.delete(25000);
+                });
+            }
+}
